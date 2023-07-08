@@ -1,0 +1,47 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 240px;
+  padding: 25px;
+  background-color: #01e8c8;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  &:hover .note__footer-img {
+    opacity: 1;
+  }
+  &__text {
+    flex: 1;
+    padding-right: 4px;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: inherit;
+      border-radius: 50px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #dcdcdc;
+      border-radius: 6px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__footer-img {
+    height: 24px;
+    width: 24px;  
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}

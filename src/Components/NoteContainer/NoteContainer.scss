@@ -1,0 +1,12 @@
+.note-container {
+  height: 100%;
+  max-width: 1050px;
+  padding: 150px 15px 30px 15px;
+  margin: 0 auto;
+  &__notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
